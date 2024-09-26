@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КРУАССАН-training</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <a href="/" class="header__logo">
+                    <img src="./images/logo.svg" alt="">
+                </a>
+                <ul class="header__nav">
+                    <li>
+                        <a href="#">Учебные курсы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="#">Справочник</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- modal -->
+        <div class="about_modal">
+          <div class="modal_in">
+            <button class="modal_close">
+              <img src="./images/modal_close.svg" alt="">
+            </button>
+            <h6>
+              Выбрать должности:
+            </h6>
+            <div class="modal_in_checkbox">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox1" class="custom-checkbox">
+                <label for="checkbox1">
+                  <span>
+                    Руководитель
+                  </span>
+                </label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox2" class="custom-checkbox">
+                <label for="checkbox2">
+                  <span>
+                    Директор
+                  </span>
+                </label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox3" class="custom-checkbox">
+                <label for="checkbox3">
+                  <span>
+                    Администратор
+                  </span>
+                </label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox4" class="custom-checkbox">
+                <label for="checkbox4">
+                  <span>
+                    Официант
+                  </span>
+                </label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox5" class="custom-checkbox">
+                <label for="checkbox5">
+                  <span>
+                    Повар
+                  </span>
+                </label>
+              </div>
+            </div>
+            <p>
+              Добавлять и редактировать должности вы можете в разделе <a href="#">
+                “справочник”
+              </a>
+            </p>
+          </div>
+        </div>
+        <!-- modal -->
+
+        <main>
+
+          <section class="analytics">
+            <div class="main_container">
+              <div class="analytics_in">
+                <h3>
+                  Аналитика
+                </h3>
+                <div class="analytics_head">
+                  <div class="analytics_head_left">
+                    <button>
+                      По пекарням
+                    </button>
+                    <button class="active">
+                      По тренингам
+                    </button>
+                    <button>
+                      По тестам
+                    </button>
+                    <button>
+                      По темам
+                    </button>
+                    <button>
+                      Непройденные тесты
+                    </button>
+                  </div>
+                  <div class="analytics_head_right">
+                    <input type="date" value="2024-01-10">
+                    <span>
+                      -
+                    </span>
+                    <input type="date" value="2024-04-13">
+                  </div>
+                </div>
+                <div class="analytics_select">
+                  <div class="analytics_select_block">
+                    <span>
+                      В какой тренинг?
+                    </span>
+                    <button>
+                      (не выбран)
+                      <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.128365 8.27999L8.34837 0L16.5684 8.27999L15.3684 9.47999L8.34837 2.4L1.32836 9.47999L0.128365 8.27999Z" fill="#929292"/>
+                        <path d="M16.44 15.72L8.21999 24L0 15.72L1.2 14.52L8.21999 21.6L15.24 14.52L16.44 15.72Z" fill="#929292"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="analytics_select_block">
+                    <span>
+                      Каким группам/сотрудникам?
+                    </span>
+                    <button>
+                      <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="7" cy="7" r="6.5" fill="white" stroke="#E0E0E0"/>
+                          <circle cx="7" cy="7" r="2" fill="#A2CE42"/>
+                        </svg>
+                        Официанты
+                      </span>
+                      <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.128365 8.27999L8.34837 0L16.5684 8.27999L15.3684 9.47999L8.34837 2.4L1.32836 9.47999L0.128365 8.27999Z" fill="#929292"/>
+                        <path d="M16.44 15.72L8.21999 24L0 15.72L1.2 14.52L8.21999 21.6L15.24 14.52L16.44 15.72Z" fill="#929292"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="analytics_main_block about_main_block">
+                  <div class="analytics_main_block_left">
+                    <div class="analytics_accardion active">
+                      <button>
+                        Техника безопасности
+                        <img src="./images/arrow-down.svg" alt="">
+                      </button>
+                      <ul class="analytics_accardion_content">
+                        <li class="analytics_accardion_content_head">
+                          <div class="analytics_accardion_content_left about_left">
+                            <h4>
+                              Сотрудник
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Должность
+                              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.68">
+                                <rect x="3.2002" y="6.40039" width="8" height="1.6" fill="#E4641E"/>
+                                <rect x="1.6001" y="3.19922" width="11.2" height="1.6" fill="#E4641E"/>
+                                <rect width="14.4" height="1.6" fill="#E4641E"/>
+                                </g>
+                              </svg>
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Прочитано тем
+                              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.68">
+                                <rect x="3.2002" y="6.40039" width="8" height="1.6" fill="#E4641E"/>
+                                <rect x="1.6001" y="3.19922" width="11.2" height="1.6" fill="#E4641E"/>
+                                <rect width="14.4" height="1.6" fill="#E4641E"/>
+                                </g>
+                              </svg>
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Пройдено тестов
+                              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.68">
+                                <rect x="3.2002" y="6.40039" width="8" height="1.6" fill="#E4641E"/>
+                                <rect x="1.6001" y="3.19922" width="11.2" height="1.6" fill="#E4641E"/>
+                                <rect width="14.4" height="1.6" fill="#E4641E"/>
+                                </g>
+                              </svg>
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Сумма балов
+                            </h4>
+                          </div>
+                        </li>
+                        <div class="about_content">
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="analytics_accardion">
+                      <button>
+                        Типы коктейлей и их подача
+                        <img src="./images/arrow-down.svg" alt="">
+                      </button>
+                      <ul class="analytics_accardion_content">
+                        <li class="analytics_accardion_content_head">
+                          <div class="analytics_accardion_content_left about_left">
+                            <h4>
+                              Сотрудник
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Должность
+                              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.68">
+                                <rect x="3.2002" y="6.40039" width="8" height="1.6" fill="#E4641E"/>
+                                <rect x="1.6001" y="3.19922" width="11.2" height="1.6" fill="#E4641E"/>
+                                <rect width="14.4" height="1.6" fill="#E4641E"/>
+                                </g>
+                              </svg>
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Прочитано тем
+                              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.68">
+                                <rect x="3.2002" y="6.40039" width="8" height="1.6" fill="#E4641E"/>
+                                <rect x="1.6001" y="3.19922" width="11.2" height="1.6" fill="#E4641E"/>
+                                <rect width="14.4" height="1.6" fill="#E4641E"/>
+                                </g>
+                              </svg>
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Пройдено тестов
+                              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.68">
+                                <rect x="3.2002" y="6.40039" width="8" height="1.6" fill="#E4641E"/>
+                                <rect x="1.6001" y="3.19922" width="11.2" height="1.6" fill="#E4641E"/>
+                                <rect width="14.4" height="1.6" fill="#E4641E"/>
+                                </g>
+                              </svg>
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Сумма балов
+                            </h4>
+                          </div>
+                        </li>
+                        <div class="about_content">
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="analytics_accardion">
+                      <button>
+                        Встреча новых гостей
+                        <img src="./images/arrow-down.svg" alt="">
+                      </button>
+                      <ul class="analytics_accardion_content">
+                        <li class="analytics_accardion_content_head">
+                          <div class="analytics_accardion_content_left about_left">
+                            <h4>
+                              Сотрудник
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Должность
+                              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.68">
+                                <rect x="3.2002" y="6.40039" width="8" height="1.6" fill="#E4641E"/>
+                                <rect x="1.6001" y="3.19922" width="11.2" height="1.6" fill="#E4641E"/>
+                                <rect width="14.4" height="1.6" fill="#E4641E"/>
+                                </g>
+                              </svg>
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Прочитано тем
+                              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.68">
+                                <rect x="3.2002" y="6.40039" width="8" height="1.6" fill="#E4641E"/>
+                                <rect x="1.6001" y="3.19922" width="11.2" height="1.6" fill="#E4641E"/>
+                                <rect width="14.4" height="1.6" fill="#E4641E"/>
+                                </g>
+                              </svg>
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Пройдено тестов
+                              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.68">
+                                <rect x="3.2002" y="6.40039" width="8" height="1.6" fill="#E4641E"/>
+                                <rect x="1.6001" y="3.19922" width="11.2" height="1.6" fill="#E4641E"/>
+                                <rect width="14.4" height="1.6" fill="#E4641E"/>
+                                </g>
+                              </svg>
+                            </h4>
+                          </div>
+                          <div class="analytics_accardion_content_block">
+                            <h4>
+                              Сумма балов
+                            </h4>
+                          </div>
+                        </li>
+                        <div class="about_content">
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                          <li class="analytics_accardion_content_center about_center">
+                            <div class="analytics_accardion_content_left">
+                              <h6>
+                                Пупкин Василий Анатольевич
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                бармен
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                64
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                5 / 5
+                              </h6>
+                            </div>
+                            <div class="analytics_accardion_content_block">
+                              <h6>
+                                <b>
+                                  100
+                                </b>
+                              </h6>
+                            </div>
+                          </li>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about_circle">
+                    <div class="circle_block">
+                      <div role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" style="--value:84"></div>
+                    </div>
+                    <p>
+                      Пройдено: <b>285 / 319</b>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+        </main>
+
+    </div>
+
+</body>
+</html>
