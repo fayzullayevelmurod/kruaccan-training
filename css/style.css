@@ -961,6 +961,62 @@ body {
   gap: 18px;
 }
 
+.analytics_select_block select {
+  width: 100%;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #000;
+  border: none;
+  outline: none;
+  padding: 2px 14px;
+  background-color: transparent;
+  background-image: url("../images/select_icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 14px top 13px;
+}
+.analytics_select_block select::-ms-expand {
+  display: none;
+}
+.analytics_select_block .select {
+  position: relative;
+  display: flex;
+  border: 1px solid #E0E0E0;
+  background-color: #FAFAFA;
+  border-radius: 14px;
+  width: 210px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.analytics_select_block option {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #000;
+}
+
+.analytics_select_block .select::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  /* background: #2b2e2e; */
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+}
+.analytics_select_block .select:hover::after {
+  color: #23b499;
+}
+
 .analytics_select_block button {
   border: 1px solid #E0E0E0;
   background-color: #FAFAFA;
