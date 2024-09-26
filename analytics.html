@@ -72,31 +72,37 @@
                     <span>
                       В какой тренинг?
                     </span>
-                    <button>
-                      (не выбран)
-                      <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.128365 8.27999L8.34837 0L16.5684 8.27999L15.3684 9.47999L8.34837 2.4L1.32836 9.47999L0.128365 8.27999Z" fill="#929292"/>
-                        <path d="M16.44 15.72L8.21999 24L0 15.72L1.2 14.52L8.21999 21.6L15.24 14.52L16.44 15.72Z" fill="#929292"/>
-                      </svg>
-                    </button>
+                    <div class="select">
+                      <select name="format" id="format">
+                        <option selected disabled>
+                          (не выбран)
+                        </option>
+                          <option value="select1">select1</option>
+                          <option value="select2">select2</option>
+                          <option value="select3">select3</option>
+                          <option value="select4">select4</option>
+                          <option value="select5">select5</option>
+                      </select>
+                    </div>
                   </div>
                   <div class="analytics_select_block">
                     <span>
                       Каким группам/сотрудникам?
                     </span>
-                    <button>
-                      <span>
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="7" cy="7" r="6.5" fill="white" stroke="#E0E0E0"/>
-                          <circle cx="7" cy="7" r="2" fill="#A2CE42"/>
-                        </svg>
-                        Официанты
-                      </span>
-                      <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.128365 8.27999L8.34837 0L16.5684 8.27999L15.3684 9.47999L8.34837 2.4L1.32836 9.47999L0.128365 8.27999Z" fill="#929292"/>
-                        <path d="M16.44 15.72L8.21999 24L0 15.72L1.2 14.52L8.21999 21.6L15.24 14.52L16.44 15.72Z" fill="#929292"/>
+                    <div class="select">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7" r="6.5" fill="white" stroke="#E0E0E0"/>
+                        <circle cx="7" cy="7" r="2" fill="#A2CE42"/>
                       </svg>
-                    </button>
+                      <select name="format" id="format">
+                        <option selected disabled>
+                          официант
+                        </option>
+                          <option value="select1">официант</option>
+                          <option value="select2">бармен</option>
+                          <option value="select3">повар</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
                 <div class="analytics_main_block">
